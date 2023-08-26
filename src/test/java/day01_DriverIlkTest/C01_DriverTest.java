@@ -1,0 +1,41 @@
+package day01_DriverIlkTest;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class C01_DriverTest {
+
+
+    public static void main(String[] args) {
+
+
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://techproeducation.com");
+
+
+
+
+       // WebDriverManager.firefoxdriver().setup();
+       // WebDriver driver = new FirefoxDriver();
+       // driver.get("https://techproeducation.com");
+
+
+
+        /*
+            POM.xml dosyasına driver sürücüleri için yüklediğimiz webDriverManager dependency sayesinde
+        yukarıdaki örnekteki bilgisayarımızda mevcut olan başka bir browser ile driver'imizi oluşturabiliriz
+        Yine bu projede ki gibi pom.xml dosyasına yüklediğimiz selenium-java dependency sayesinde get() methodu
+        ile string olarak belirtmiş olduğumuz istediğimiz bir url'e gidebiliriz.
+         */
+
+
+
+
+    }
+
+
+
+}
